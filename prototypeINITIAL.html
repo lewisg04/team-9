@@ -12,7 +12,7 @@ function Distancefunct(a,b)
   {
     distance[i]= Math.sqrt(Math.pow((exitsX[i]-a),2)+Math.pow((exitsY[i]-b),2));
   }
-  return distance;
+  return distance[];
 }
     
 function FindPosition(oElement)
@@ -55,7 +55,7 @@ function GetCoordinates(e)
   PosY = PosY - ImgPos[1];
   document.getElementById("x").innerHTML = PosX;
   document.getElementById("y").innerHTML = PosY;
-  Distancefunct(PosX,PosY);
+  distance[]=Distancefunct(PosX,PosY);
 }
 
 //-->
