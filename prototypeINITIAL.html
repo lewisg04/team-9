@@ -49,7 +49,7 @@ function GetCoordinates(e)
   document.getElementById("y").innerHTML = PosY;
     for (let i=0; i<exitsX.length; i++)
   {
-    distance[i]= Math.sqrt(Math.pow((exitsX[i]-a),2)+Math.pow((exitsY[i]-b),2));
+    distance[i]= Math.sqrt(Math.pow((exitsX[i]-PosX),2)+Math.pow((exitsY[i]-PosY),2));
   }
 }
 
