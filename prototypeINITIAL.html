@@ -10,7 +10,7 @@ function Distancefunct()
   
   for (let i=0; i<exitsX.length; i++)
   {
-    distance[i]= sqrt((exitsX[i]-posX)^2+(exitsY[i]-posY)^2);
+    distance[i]= sqrt(math.pow((exitsX[i]-posX),2)+math.pow((exitsY[i]-posY),2));
   }
   return distance;
 }
