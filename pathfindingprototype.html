@@ -43,6 +43,9 @@ function GetCoordinates(e)
   PosY = PosY - ImgPos[1];
   document.getElementById("x").innerHTML = PosX;
   document.getElementById("y").innerHTML = PosY;
+
+  if PosX=<100 && PosY=<1000;
+  console.log("you are already outside")
 }
 
 //-->
@@ -69,4 +72,3 @@ myImg.onmousedown = GetCoordinates;
   </body
     
     </html>
-  
