@@ -2,7 +2,19 @@
 <html>
   <script type="text/javascript">
 <!--
-
+const exitsX = [195,348,521,589,685,777,959,1001,625,510,364,285,116,114,112,111,107]
+const exitsY = [215,231,220,48,47,47,47,387,427,557,618,613,598,543,474,345,240]
+const disntance =[];
+function Distancefunct()
+{
+  
+  for (let i=0; i<exitsX.length; i++)
+  {
+    distance[i]= sqrt((exitsX[i]-posX)^2+(exitsY[i]-posY)^2);
+  }
+  return distance;
+}
+    
 function FindPosition(oElement)
 {
   if(typeof( oElement.offsetParent ) != "undefined")
