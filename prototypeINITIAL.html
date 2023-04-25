@@ -54,6 +54,7 @@ function GetCoordinates(e)
   }
   minDistance = Math.min(...distance);
   arrayPlace=distance.indexOf(minDistance);
+  document.getElemebtById("exit").innerHTML = arrayPlace;
 }
 
 //-->
@@ -74,7 +75,7 @@ myImg.onmousedown = GetCoordinates;
 //-->
 </script>
 
-
+<p>Go to exit <span id="exit"></span></p>
 <p>X:<span id="x"></span></p>
 <p>Y:<span id="y"></span></p>
   </body
