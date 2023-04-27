@@ -55,6 +55,9 @@ function GetCoordinates(e)
   minDistance = Math.min(...distance);
   arrayPlace=distance.indexOf(minDistance);
   document.getElementById("exit").innerHTML = arrayPlace;
+  if (PosX <= 100 && PosY <= 1000)|| (PosY >=700) {
+  alert("You are outside");
+  else
   alert("EXIT AT EXIT " +arrayPlace+" NOW");
 }
 
