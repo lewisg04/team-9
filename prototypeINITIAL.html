@@ -24,7 +24,6 @@ function FindPosition(oElement)
       return [ oElement.x, oElement.y ];
     }
 }
-
 function GetCoordinates(e)
 {
   var PosX = 0;
@@ -56,10 +55,10 @@ function GetCoordinates(e)
   arrayPlace=distance.indexOf(minDistance);
   document.getElementById("exit").innerHTML = arrayPlace;
   alert("EXIT AT EXIT " +arrayPlace+" NOW");
+}
 
 //-->
 </script>
-
   <head>
     <title> Pathfinding Prototype </title>
     Pathfinding Prototype
@@ -67,14 +66,12 @@ function GetCoordinates(e)
   <br>
   <body>
     <img id="myImgId" alt="" src="VETMED1stFLOOR1024_1.jpg" width="1200" height="800" />
-
 <script type="text/javascript">
 <!--
 var myImg = document.getElementById("myImgId");
 myImg.onmousedown = GetCoordinates;
 //-->
 </script>
-
 <p>Go to exit <span id="exit"></span></p>
 <p>X:<span id="x"></span></p>
 <p>Y:<span id="y"></span></p>
