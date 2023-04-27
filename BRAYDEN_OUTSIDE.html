@@ -7,7 +7,7 @@ const exitsY = [215,231,220,48,47,47,47,387,427,557,618,613,598,543,474,345,240]
 const distance =[];
 var minDistance =0;
 var arrayPlace =0;
-    
+
 function FindPosition(oElement)
 {
   if(typeof( oElement.offsetParent ) != "undefined")
@@ -55,12 +55,8 @@ function GetCoordinates(e)
   minDistance = Math.min(...distance);
   arrayPlace=distance.indexOf(minDistance);
   document.getElementById("exit").innerHTML = arrayPlace;
-  if (PosX <= 100 && PosY <= 1000)|| (PosY >=700) {
-  alert("You are outside");
-  else
   alert("EXIT AT EXIT " +arrayPlace+" NOW");
 }
-
 
 //-->
 </script>
@@ -84,5 +80,5 @@ myImg.onmousedown = GetCoordinates;
 <p>X:<span id="x"></span></p>
 <p>Y:<span id="y"></span></p>
   </body
-    
+
     </html>
